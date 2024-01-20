@@ -13,7 +13,7 @@ all: coredns
 
 .PHONY: coredns
 coredns: $(CHECKS)
-	CGO_ENABLED=$(CGO_ENABLED) $(SYSTEM) go build $(BUILDOPTS) -ldflags="-s -w -X github.com/voltagex-forks/coredns/coremain.GitCommit=$(GITCOMMIT)" -o $(BINARY)
+	CGO_ENABLED=1 $(SYSTEM) go build $(BUILDOPTS) -ldflags="-s -w -X github.com/voltagex-forks/coredns/coremain.GitCommit=$(GITCOMMIT)" -o $(BINARY)
 
 .PHONY: check
 check: core/plugin/zplugin.go core/dnsserver/zdirectives.go
