@@ -62,4 +62,6 @@ var Directives = []string{
 	"on",
 	"sign",
 	"view",
+	"pdsql",
+	"pdsql_sqlite",
 }
