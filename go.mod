@@ -1,8 +1,6 @@
 module github.com/coredns/coredns
 
-go 1.21
-
-toolchain go1.21.6
+go 1.25
 
 require (
 	github.com/Azure/azure-sdk-for-go v68.0.0+incompatible
@@ -41,7 +39,7 @@ require (
 	k8s.io/apimachinery v0.28.4
 	k8s.io/client-go v0.28.3
 	k8s.io/klog/v2 v2.110.1
-	k8s.io/utils v0.0.0-20230406110748-d93618cff8a2
+	k8s.io/utils v0.0.0-20260707023825-cf1189d6abe3
 )
 
 require (
